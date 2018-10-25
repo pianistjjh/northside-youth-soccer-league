@@ -1,0 +1,557 @@
+body, div, h1, h2, h3, h4, h5, p, span, a, img, header, section {
+    margin:0;
+    padding:0;
+}
+
+
+
+
+/*common part for all pages*/
+.wrap { 
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;   
+}
+.heading {
+    display: flex;  
+    flex-direction: column;
+}
+.heading .heading_top {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    line-height: 100px;
+    background: black;
+    color: white;
+}
+.heading .heading_top .heading_logo{
+    display: inline-block; 
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px 20px 0;
+    text-indent: -9999px;
+    background: url(https://s3.amazonaws.com/gbstool/emails/2027/nysl_logo.png?AWSAccessKeyId=AKIAJBIZLMJQ2O6DKIAA&Expires=1539680400&Signature=LjKqwgwA7NO6iwu9pFyLORN8nkk%3D) no-repeat;
+    background-size: contain;
+}
+.heading .nav {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 10%;
+    line-height: 50px;
+    justify-content: space-between;
+    font-size: 18px;    
+}
+.heading .nav p {
+    color: grey;
+}
+.heading .nav a {
+    text-decoration: none;
+    color: grey;
+}
+.heading .nav p.on{
+    font-weight: 700;
+}
+
+
+
+
+
+section {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+}
+section .subhead {
+    width: 100%;
+    height: 450px;
+}
+section .subhead .subhead_bg_img{
+    width: 100%;
+    height: 100%;
+    background: url("https://s3.amazonaws.com/gbstool/emails/2028/design2_image1.jpg?AWSAccessKeyId=AKIAJBIZLMJQ2O6DKIAA&Expires=1539766800&Signature=%2F3PSHP2WNZ9Jc9ZJj4oRiOHCCKg%3D") no-repeat top;
+    background-size: cover; 
+    filter:blur(4px);
+}
+section .subhead .subhead_bg_text {
+    width: 86%;
+    height: 40%;
+    position:absolute;
+    top: 30%;
+    left: 7%;
+    background-color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .subhead .subhead_bg_text h2 {
+    display: block;
+    font-size:3em;
+    color: white;
+    width: 100%;
+
+}
+section .textWrap {
+    margin:50px 0 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+section .textWrap .textIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+section .textWrap .textIndex .text_title{
+    min-width: 200px;   
+}
+section .textWrap .textIndex .text_detail{
+    width: 500px;
+    text-align: left;
+}
+
+
+
+/*rules&policies*/
+.textWrap .rulesText{
+    width: 85%;
+    margin: 0 auto;
+}
+.rulesText {
+    margin-top:50px;
+}
+.middle {
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.textWrap .sportsman ul li {
+    list-style-type: square;
+}
+.textWrap .fifaReg ol ol {
+    list-style-type:lower-alpha;
+}
+.textWrap .fifaReg ol ol dl{
+    list-style-type: square;
+    padding-left:20px;
+}
+.fifaReg ol>li.bold {
+    font-weight:bold;
+}
+.fifaReg ol>li span, .fifaReg ol li {
+    font-weight:normal;
+}
+.mixed span, .numOfPlayers span{
+    font-weight:bold;
+}
+
+
+
+/*collapsible(accordion) - rules*/
+
+.close .accordionItemContent{ 
+    height: 0px;
+    overflow: hidden;
+    
+}
+/*
+.open .accordionItemContent{
+    height:
+}
+*/
+.accordionItem h3{
+    display: block;
+    cursor: pointer;
+}
+
+
+/*registration*/
+
+.regiWrap {
+    width:100%;
+    margin:50px 100px 100px 100px;  
+    height:auto;
+}
+.regiWrap form {
+    width: 100%;
+    height:auto;
+}
+.regiWrap .formInnerWrap {   
+    height: auto;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    align-items: flex-start;*/
+}
+.regiWrap .formInnerWrap .regDetWrap {
+   
+  align-items: stretch;
+   
+    width: 400px;
+    height:30px;
+    margin:10px 0;    
+    float:left;    
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.regiWrap .formInnerWrap .regDetWrap.width100 {
+    width: 100%;
+   
+}
+.regiWrap .formInnerWrap .regDetWrap .regDetTitle {
+    width: 160px;  
+}
+.regiWrap .formInnerWrap .regDetWrap .regDetInput {
+    width: calc(100% - 170px);
+    padding-right: 10px;
+    flex:1;
+}
+.regiWrap .formInnerWrap .regDetWrap .regDetTitle p{
+    width:100%;
+    height: 100%; 
+    text-indent:10px;
+}
+.regiWrap .formInnerWrap .regDetWrap .regDetInput input[type=text]{
+    width:100%;
+    
+    
+    height: 100%;
+    outline:0;
+    border:none;
+    background-color:#e6e6e6;
+    box-sizing:border-box;
+    padding-left:10px;
+}
+.regiWrap .formInnerWrap .regDetWrap .regDetInput input[type=text]
+
+.regiWrap .school {
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.regiWrap .school h4 {
+    display:inline-block;
+    width: 100%;
+    margin-top:30px;
+}
+.regiWrap .school .schools  {
+    width: calc(50% - 40px); 
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.regiWrap .school .schoolTitle {
+    width: 200px;
+     line-height: 20px;
+}
+.regiWrap .school .schoolSelect {
+    width: calc(100% - 200px); 
+} 
+
+.regiWrap .positionWrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.regiWrap .positionWrap .position {
+    width: 500px;
+    height: auto;
+    margin-top:20px;
+
+}
+.regiWrap span.fontweight500{
+    font-weight: 500;
+    display: block;
+}
+.regiWrap .pos_checkbox{
+    margin: 20px 0;
+    width: 50%; 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.regiWrap .pos_checkbox .pos_input_wrap{
+    width: 200px;    
+}
+.regiWrap .uniform {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+ 
+    
+}
+.regiWrap .uniform .have_uniform {
+    width: 100%;
+    margin: 10px 0 15px;
+}
+.regiWrap .uniform .have_uniform h4 {
+    display:block;
+    width: 100%;
+    text-align: left;
+    
+}
+.regiWrap .uniform .uniform_size{
+    width: 500px;
+    height: auto;
+    margin: 20px 0;
+
+   
+  
+}
+
+.regiWrap .uniform .uniform_size .uniform_inputWrap{
+    width: 100%;
+    height: 100px;
+     display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   flex-direction: column;
+}
+.regiWrap .uniform .uniform_size .uniform_inputWrap .uniform_input {
+    width: 200px;
+}
+.regiWrap .permission {
+    width: 90%;
+    padding-right:100px;
+
+    margin-bottom: 20px;
+}
+    
+.regiWrap .permission p.perm_font14{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.regiWrap .permission .perm_sign {
+    width: 100%;
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+.regiWrap .permission .perm_sign .perm_sign_inner{
+    width: 400px;
+     display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin:20px;
+}
+.regiWrap .submitBtn {
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+}
+.regiWrap .submitBtn input {
+    border: none;
+    background-color: darkgray;
+    text-decoration: none;
+    width:100%;
+    height: 100%;
+    color: white;
+}
+
+
+/*game information*/
+
+.gameText {
+    width: 80%;
+    height: auto;
+    position:relative;
+    left: 10%;
+    margin:50px 0 100px 0;
+}
+.gameText .align_left {
+    text-align: left;
+    margin-bottom:20px;
+}
+.gameText > p.align_left {
+    font-style: italic;
+}
+
+.schedule {
+    width:100%; 
+    height: auto; 
+}
+.schedule table {
+    width: 100%;
+    margin-bottom:20px;
+}
+.schedule table th, .schedule table td{ 
+    width: 25%; 
+    height: auto;
+    text-align: center;
+}
+.schedule table th {    
+    background-color: lightgrey;
+}
+.schedule table td {
+    background-color: #F3F3F3;
+}
+.locations {
+    width: 100%;
+    height: auto;
+    margin:30px 0;
+    max-width: 1200px;
+}
+.locations > h4 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.locations .location_maps {
+    
+    width: 100%; 
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.locations .location_maps .maps_textWrap {
+    margin: 20px 0;
+}
+.locations .location_maps .maps_wrap iframe{
+    width: 100%;
+    max-width:600px;
+    height: 100%;
+    border: none;
+}
+
+.info_bottom {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background; yellow;
+}
+
+.margin20{
+    height: 100%;
+    width: 100%;
+}
+.margin20 h4{
+    display:inline-block;
+    float:left;
+}
+.margin20 p{
+    display:inline-block;
+    float:left;
+}
+.margin20 p span { 
+    font-weight: 700;
+}
+
+.phone, .email{ 
+    float: left; 
+    width: 50%;
+}
+
+
+/*show_data*/
+.dataTable {
+    width: 70%;
+    margin: 50px auto;
+
+    border: none;
+}
+.dataTable table, .dataTable th, .dataTable tr, .dataTable td{
+    border: none;
+}
+.dataTable th { 
+    background: grey;
+    color: white;
+}
+.dataTable td {
+    background: lightgrey;
+}
+/*Email (from contact)*/
+.emailWrap ul, .emailWrap li, .emailWrap label{
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+}
+.emailWrap {
+    margin: 50px 0;
+    width: 60%;
+}
+.emailWrap form {
+    width: 100%;
+    height: 100%;
+}
+.emailWrap .emailInnerWrap .emails{
+    width: 100%;
+    height: auto;
+}
+.emailWrap .emailInnerWrap .emails ul li{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.emailWrap .emailInnerWrap .emails ul li .emailTitle{
+    width: 30%;
+    text-align:right;
+    line-height: 35px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.emailWrap .emailInnerWrap .emails ul li .emailDetail{
+
+    display: block;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 30px;
+}
+.emailWrap .emailInnerWrap .emails ul li .emailDetail.noBorder{
+    border: none;
+    padding-top:5px;
+    padding-left: 0;
+}
+.emailWrap .emailInnerWrap .emails ul li .emailDetail input[type=text]{
+    border: none;
+    width: 100%;
+     outline:none;
+    
+}
+.emailSendBtn {
+    float:right;
+    width: 80px;
+    height: 35px;
+    margin-top: 50px;
+}
+.emailSendBtn input[type=submit]{
+    border: 1px solid grey;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background: none;
+    font-size:16px;
+    color:grey;
+    
+    
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>      
+           <link rel ="stylesheet" href="styles/main.css"> 
+            
+    </head>
+    <body>   
+       <div class="wrap">
+          <header>
+            <div class="heading">
+                <div class="heading_top">
+                    <h1 class="heading_logo">logo</h1>
+                    <h1 class="heading_title">Northside Youth Soccer League</h1>
+                </div>
+                <div class="nav">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About NYSL</a></p>
+                    <p><a href="game_info.html">Game Information</a></p>
+                    <p><a href="rules.html">Rules & Policies</a></p>
+                    <p class="on">Registration</p>
+                    <p><a href="contact.html">Contact us</a></p>
+                </div>            
+            </div> 
+          </header>
+          <section>            
+            <div class="subhead">
+                <div class="subhead_bg_img"></div>
+                <div class="subhead_bg_text">
+                    <h2>Registration</h2>
+                </div>
+            </div>
+           
+           
+           
+            <div class="regiWrap"> 
+               
+                <form name="sample" action="show_data.html" method="get">
+                    <div class="formInnerWrap">
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Season</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="season" id="season">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Player’s First Name</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="first_name">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Last Name</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="last_name">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width100">
+                            <div class="regDetTitle">
+                                <p>Street Address</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="street_address">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>City</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Zip Code</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="zip_code">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Birth Date</p>
+                            </div>
+                            <div class="regDetInput">                       
+                                <input type="text" name="birth_date" placeholder="dd/mm/yyyy">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Gender</p>
+                            </div>
+                            <div class="regDetInput">                          
+                                <input type="radio" name="gender" value="male"> Male
+                                <input type="radio" name="gender" value="female"> Female
+                            </div>
+                        </div>
+                        <div class="regDetWrap width100">
+                            <div class="regDetTitle">
+                                <p>Grade</p>
+                            </div>
+                            <div class="regDetInput">                          
+                                <input type="radio" name="grade" value="pre_school">Pre-School
+                                <input type="radio" name="grade" value="1_grade"> 1st
+                                <input type="radio" name="grade" value="2_grade"> 2nd
+                                <input type="radio" name="grade" value="3_grade"> 3rd
+                                <input type="radio" name="grade" value="4_grade"> 4th
+                                <input type="radio" name="grade" value="5_grade"> 5th
+                                
+                            </div>
+                        </div>
+                        <div class="regDetWrap width100">
+                            <div class="regDetTitle">
+                                <p>Parent/Guardian</p>
+                            </div>
+                            <div class="regDetInput">
+                                <input type="text" name="parent_guardian">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Contact Phone</p>
+                            </div>
+                            <div class="regDetInput"> 
+                                <input type="text" name="phone" placeholder="123-123-1234">
+                            </div>
+                        </div>
+                        <div class="regDetWrap width50">
+                            <div class="regDetTitle">
+                                <p>Contact E-mail</p>
+                            </div>
+                            <div class="regDetInput"> 
+                                <input type="text" name="email" placeholder="user-name@domain.com.">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="school">
+                            <h4>Which elementary schools do you live near?</h4>
+                            <div class="schools firstSchool">
+                                <div class="schoolTitle">
+                                    <p>First Closest School:</p>
+                                </div>
+                                <div class="schoolSelect">
+                                    <select name="first_School">
+                                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                        <option value="Greenbay">Greenbay</option>
+                                        <option value="North Elementary">North Elementary</option>
+                                        <option value="Howard A Yeager">Howard A Yeager</option>
+                                        <option value="South Elementary">South Elementary</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="schools secondSchool">
+                                <div class="schoolTitle">
+                                    <p>Second Closest School:</p>
+                                </div>
+                                <div class="schoolSelect">
+                                    <select name="second_School">
+                                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                        <option value="Greenbay">Greenbay</option>
+                                        <option value="North Elementary">North Elementary</option>
+                                        <option value="Howard A Yeager">Howard A Yeager</option>
+                                        <option value="South Elementary">South Elementary</option>
+                                    </select>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="positionWrap">
+                        <div class="position">
+                            <h4>What position(s) do you normally play? 
+                                <span class="fontweight500"> (check all that apply)</span>
+                            </h4>
+                            <div class="pos_checkbox">
+                                <div class="pos_input_wrap">
+                                    <input type="checkbox" name="position_normal" value="forward">Forward
+                                </div>
+                                <div class="pos_input_wrap">
+                                    <input type="checkbox" name="position_normal" value="Midfield">Midfield
+                                </div>
+                                <div class="pos_input_wrap">
+                                     <input type="checkbox" name="position_normal" value="Defense">Defense
+                                </div>
+                                <div class="pos_input_wrap">
+                                     <input type="checkbox" name="position_normal" value="Goalkeeper">Goalkeeper
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position">
+                            <h4>What position(s) do you want to play? 
+                                <span class="fontweight500"> (check all that apply)</span>
+                            </h4>
+                            <div class="pos_checkbox">
+                                <div class="pos_input_wrap">
+                                    <input type="checkbox" name="position_normal" value="forward">Forward
+                                </div>
+                                <div class="pos_input_wrap">
+                                    <input type="checkbox" name="position_normal" value="Midfield">Midfield
+                                </div>
+                                <div class="pos_input_wrap">
+                                     <input type="checkbox" name="position_normal" value="Defense">Defense
+                                </div>
+                                <div class="pos_input_wrap">
+                                     <input type="checkbox" name="position_normal" value="Goalkeeper">Goalkeeper
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniform">
+                        <div class="have_uniform">
+                            <input type="checkbox" name="uniform" value="have_a_uniform" id="chkUniform">Already Have a Uniform
+                        </div>
+                        <div class="uniform_size">
+                            <h4>Jersey Size</h4>
+                            <div class="uniform_inputWrap" >
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="youth_small" class="uniformCheckbox">Youth Small
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="youth_medium" class="uniformCheckbox">Youth Medium
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="youth_large" class="uniformCheckbox">Youth Large
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="small" class="uniformCheckbox">Small
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="medium" class="uniformCheckbox">Medium    
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="large" class="uniformCheckbox">Large
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="extra_large" class="uniformCheckbox">Extra-Large
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uniform_size">
+                            <h4>Jersey Size</h4>
+                            <div class="uniform_inputWrap" >
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="youth_small" class="uniformCheckbox">Youth Small
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="youth_medium" class="uniformCheckbox">Youth Medium
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="youth_large" class="uniformCheckbox">Youth Large
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="small" class="uniformCheckbox">Small
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="medium" class="uniformCheckbox">Medium    
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="large" class="uniformCheckbox">Large
+                                </div>
+                                <div class="uniform_input">
+                                    <input type="radio" name="jersey_size" value="extra_large" class="uniformCheckbox">Extra-Large
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="permission">
+                        <div class="perm_text">
+                            <h4>Permission to Play</h4>
+                            <p class="perm_font14">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+sponsored activities, which transportation.</p>
+                            <p class="perm_font14">By entering your name below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+cancellation policy and agree to its terms. </p>
+                        </div>
+                        <div class="perm_sign">
+                            <div class="perm_sign_inner">
+                                <p>Parent/Guardian Signature:</p>
+                                <input type="text" name="signiture_name">
+                            </div>
+                            <div class="perm_sign_inner">
+                                <p>Date:</p>
+                                <input type="text" name="signiture_date" id="inputCurrentDate" disabled>
+                            </div>
+                        </div>                        
+                </div>
+                <div class="submitBtn">
+                      <input type="submit" value="Submit" onsubmit>
+                </div>
+                        
+                    
+                
+                </form>
+            </div>
+           </section>
+        </div>
+            
+    <script src="validate.js"></script>
+    </body>
+</html>
